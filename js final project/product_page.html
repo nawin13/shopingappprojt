@@ -19,8 +19,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="./checkout.css" />
-    <title>Check-Out</title>
+    <link rel="stylesheet" href="./product_page.css" />
+    <title>Product-Details</title>
   </head>
   <body>
     <header>
@@ -42,10 +42,10 @@
         </div>
         <div class="right-header">
           <div class="cart">
-            <p id="cart-count"></p>
-            <a href="/checkout.html" class="cart_link"
-              ><i class="fas fa-shopping-cart"></i
-            ></a>
+            <p id="cart-count">0</p>
+            <a href="/checkout.html" class="cart_link">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
           </div>
           <div class="avatar">
             <img src="./MY.jpg" alt="Avatar" style="width:35px">
@@ -55,32 +55,37 @@
     </header>
 
     <main>
-      <section id="cart-section">
-        <h1 id="cart-heading">Checkout</h1>
-        <div id="cart-content">
-          <div id="cart-list">
-            <h3 class="section-heading">
-              Total Items:
-              <span id="items-count">0</span>
-            </h3>
+      <section class="product_page">
+        <section>
+          <div class="product-main">
+            <div id="main-image-div">
+              <div class="image-main">
+                <img id="main-img-link" src="../assets/default-product.png" />
+              </div>
+            </div>
+            <div id="product-details">
+              <h1 id="product-title">Product Title</h1>
+              <h1 id="product-brand">Product Brand</h1>
+              <h4 class="section-heading">
+                Price: Rs
+                <p id="product-price">XXXX</p>
+              </h4>
+              <h4 class="section-heading">Description</h4>
+              <p id="description">Product Description</p>
+              <h4 class="section-heading">Product Preview</h4>
+              <div id="product-images"></div>
+
+              <button id="cartAdd-button">Add to Cart</button>
+            </div>
           </div>
-          <div>
-            <h3 class="section-heading">Total Amount</h3>
-            <p>Amount: Rs<span id="total-amount">0</span></p>
-            <a href="/thankyou.html"
-              ><button id="place-order">Place Order</button></a
-            >
-          </div>
-        </div>
+        </section>
       </section>
     </main>
-    
     <img
-      id="edyoda_logo"
-      src="https://res.cloudinary.com/dt2q0lr2m/image/upload/v1625503514/Edyoda_gq6daf.png"
-      alt="Edyoda Projects Logo"
-    />
-
+    id="edyoda_logo"
+    src="https://res.cloudinary.com/dt2q0lr2m/image/upload/v1625503514/Edyoda_gq6daf.png"
+    alt="Edyoda Projects Logo"
+  />
     <footer>
       <div>
         <h4 class="footer-heading">ONLINE STORE</h4>
@@ -111,9 +116,6 @@
         <p href="/index.html" class="link-footer">United States</p>
       </div>
     </footer>
-
-    <script src="./index.js"></script>
     <script src="./product_page.js"></script>
-    <script src="./checout.js"></script>
   </body>
 </html>

@@ -19,8 +19,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="./checkout.css" />
-    <title>Check-Out</title>
+    <title>Order-Confirm-Thank-You</title>
   </head>
   <body>
     <header>
@@ -42,7 +41,7 @@
         </div>
         <div class="right-header">
           <div class="cart">
-            <p id="cart-count"></p>
+            <p id="cart-count">0</p>
             <a href="/checkout.html" class="cart_link"
               ><i class="fas fa-shopping-cart"></i
             ></a>
@@ -55,26 +54,19 @@
     </header>
 
     <main>
-      <section id="cart-section">
-        <h1 id="cart-heading">Checkout</h1>
-        <div id="cart-content">
-          <div id="cart-list">
-            <h3 class="section-heading">
-              Total Items:
-              <span id="items-count">0</span>
-            </h3>
-          </div>
-          <div>
-            <h3 class="section-heading">Total Amount</h3>
-            <p>Amount: Rs<span id="total-amount">0</span></p>
-            <a href="/thankyou.html"
-              ><button id="place-order">Place Order</button></a
-            >
-          </div>
+      <div id="order-tick">
+        <div id="order-color">
+          <img
+            src="https://test-hosting-8f9bf.web.app/assets/white-tick.png"
+            alt=""
+          />
         </div>
-      </section>
+        <h1 class="main-heading-order">Order Placed Successfully!!</h1>
+        <p class="section-heading">
+          We have sent you an email with the order details
+        </p>
+      </div>
     </main>
-    
     <img
       id="edyoda_logo"
       src="https://res.cloudinary.com/dt2q0lr2m/image/upload/v1625503514/Edyoda_gq6daf.png"
@@ -111,9 +103,7 @@
         <p href="/index.html" class="link-footer">United States</p>
       </div>
     </footer>
-
     <script src="./index.js"></script>
     <script src="./product_page.js"></script>
-    <script src="./checout.js"></script>
   </body>
 </html>
